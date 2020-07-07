@@ -3,48 +3,96 @@
     <head>
         <meta charset="utf-8">
         <title>Youtube Embedded</title>
+        <link rel='stylesheet' href='styles.css'>
     </head>
     <body>
         <header>
-
+            <nav>
+                <button class='hamburger'>Burger Button</button>
+                <a href='www.youtube.com'>
+                    <img id='logo' src=''>YoutubeLogo
+                </a>
+                <div class='searchbar'>
+                    <input type='text' placeholder='Search'>
+                    <button type='submit' class='search btn'>Search Btn</button>
+                    <a href='' class='upload btn'>
+                        <img src=''>Upload
+                    </a>
+                    <a href='' class='apps btn'>
+                        <img src=''>Apps
+                    </a>
+                    <a href='' class='notification btn'>
+                        <img src=''>Notification
+                    </a>
+                    <a href='' class='userpage btn'>
+                        <img src=''>User
+                    </a>
+                </div>
+            </nav>
         </header>
-        <div id='main-video'>
-            <embed
-            >
-            <h2>
-                Video Title
-            </h2>
-            <div class='video-info'>
-                <div class='info-bar'>
+        <section class='main'>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/lJIrF4YjHfQ" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <section class='video-info'>
+                <section class='video-stats'>
+                    <h2>
+                        Embed Videos and playlists
+                    </h2>
+                    <div id='likes'>
+                        Like
+                        Dislike
+                    </div>
+                    <div id='share'>
+                        Share
+                    </div>
+                </section>
+                <section class='info-bar'>
                     <div id='views'></div>
                     <div id='date'></div>
                     <div id='likes'></div>
                     <div id='share'></div>
                     <div id='save'></div>
-                </div>
-                <div class='video-caption'>
+                </section>
+                <article class='video-caption'>
                     <img id='channel-icon'>
-                    <h2>Channel Name</h2>
+                    <h2>TeamYoutube [Help]</h2>
                     <h3>Subscribers</h3>
-                    <p>Video caption info</p>
+                    <p>To learn more please visit the YouTube Help Center: https://www.youtube.com/help
+                    </p>
                     <button id='subscribe' type='submit'>Subscribe</button>
-                </div>
-            </div>
-            <div class='secondary-videos'>
-                <div id='up-next'>
-                    <img>
-                    <h2>Title</h2>
-                    <div>Author</div>
-                    <div>Views</div>
-                    <div>Added</div>
-                </div>
-                <div id='related-videos'>
-
-                </div>
-            </div>
+                </article>
+            </section>
             <div class='comments'>
-
+                <p>Rando Comment</p>
             </div>
-        </div>
+        </section>
+        <aside class='secondary-videos'>
+            <div id='related-videos'>
+                <div class='related-vid'>
+                    <img src='https://i.ytimg.com/an_webp/VGAmCbweCZI/mqdefault_6s.webp?du=3000&sqp=CJiIkvgF&rs=AOn4CLCvJK-hRYaomzrk_-x7-df8K52Oig'>
+                    <section class='related-vid-info'>
+                        <h2>Prolix - Beyond The Satellite</h2>
+                        <div>UKF Drum & Bass</div>
+                        <div>17K views</div>
+                        <div>23 hours ago</div>
+                    </section>
+                </div>
+                <div class='related-vid'>
+                    <img src='https://i.ytimg.com/an_webp/hIdsjNGCGz4/mqdefault_6s.webp?du=3000&sqp=COiGkvgF&rs=AOn4CLBmIavLRE1Me_MpnSOx4jd7QWeIxw'>
+                    <section class='related-vid-info'>
+                        <h2>Good Will Hunting | 'My Boy's Wicket Smart'</h2>
+                        <div>Miramax</div>
+                        <div>16M views</div>
+                        <div>5 years ago</div>
+                    </section>
+                </div>
+            </div>
+        </aside>
     </body>
 </html>
